@@ -182,9 +182,6 @@ p {
 
   font-size: 4.2rem;
 }
-.home .home-intro .content {
-  padding-right: 6rem;
-}
 
 .home .home-intro .content .content-secondary p {
   font-size: 20px;
@@ -303,9 +300,14 @@ p {
   justify-content: space-between; /* Espace égal entre les cartes */
 }
 @media screen and (max-width: 1190px) {
-  .card-container {
+  .card-container,
+  .formulaire,
+  .home-content,
+  .content,
+  h1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 3rem;
   }
 }

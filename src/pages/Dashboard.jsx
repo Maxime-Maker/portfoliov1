@@ -6,29 +6,31 @@ const Dashboard = () => {
   return (
     <>
       <div className="home">
-        <div className="home-intro">
-          <div className="content">
-            <div className="content-hi">
-              <p>
-                <span className="hi">✌🏻</span>
-                Bonjour, Je suis Maxime
-              </p>
+        <div className="home-content">
+          <div className="home-intro">
+            <div className="content">
+              <div className="content-hi">
+                <p>
+                  <span className="hi">✌🏻</span>
+                  Bonjour, Je suis Maxime
+                </p>
+              </div>
+              <div className="content-primary">
+                <h1>
+                  <span>Developpeur Web</span> & <span>Web Mobile</span>.
+                </h1>
+              </div>
+              <div className="content-secondary">
+                <p>
+                  Je recherche un apprentissage de deux ans pour mon diplôme de{' '}
+                  <span>Concepteur Développeur d’Applications</span> suivi à{' '}
+                  <span>Foreach Academy</span>
+                </p>
+              </div>
             </div>
-            <div className="content-primary">
-              <h1>
-                <span>Developpeur Web</span> & <span>Web Mobile</span>.
-              </h1>
+            <div className="hero-icon">
+              <div className="hero"></div>
             </div>
-            <div className="content-secondary">
-              <p>
-                Je recherche un apprentissage de deux ans pour mon diplôme de{' '}
-                <span>Concepteur Développeur d’Applications</span> suivi à{' '}
-                <span>Foreach Academy</span>
-              </p>
-            </div>
-          </div>
-          <div className="hero-icon">
-            <div className="hero"></div>
           </div>
         </div>
         <Stack />
@@ -85,7 +87,7 @@ const Dashboard = () => {
               />
               <p>
                 <a href="https://twitter.com/" target="_blank" rel="noreferrer">
-                  GitHub
+                  Twitter
                 </a>
               </p>
             </div>
