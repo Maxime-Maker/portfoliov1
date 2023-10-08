@@ -17,7 +17,7 @@ const Dashboard = () => {
               </div>
               <div className="content-primary">
                 <h1>
-                  <span>Developpeur Web</span> & <span>Web Mobile</span>.
+                  <span>Developpeur Web</span> & <span>Web Mobile</span>
                 </h1>
               </div>
               <div className="content-secondary">
