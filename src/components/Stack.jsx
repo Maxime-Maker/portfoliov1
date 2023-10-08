@@ -1,42 +1,46 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 const Stack = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const targetRef = useRef(null);
 
   useEffect(() => {
-    const handleIntersection = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      });
-    };
-
     const options = {
       root: null,
       rootMargin: '0px',
       threshold: 0.5,
     };
 
-    const observer = new IntersectionObserver(handleIntersection, options);
-    const target = document.querySelector('#maDiv');
+    const handleIntersection = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio > 0.5) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    };
 
-    if (target) {
-      observer.observe(target);
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    if (targetRef.current) {
+      observer.observe(targetRef.current);
     }
 
     return () => {
-      if (target) {
-        observer.unobserve(target);
+      if (targetRef.current) {
+        observer.unobserve(targetRef.current);
       }
     };
   }, []);
+
   return (
-    <div id="maDiv" className={isVisible ? 'show' : 'invisible'}>
-      <div className="tooling  show">
-        <div className="tooling-title">
-          <h2>Mes technologiques</h2>
+    <div className="tooling  ">
+      <div className="tooling-title">
+        <div id="technologie">
+          {' '}
+          <h2>Mes technologies</h2>
         </div>
+      </div>{' '}
+      <div id="maDiv" className="reveal invisible" ref={targetRef}>
         <div className="tooling-box">
           <div className="tooling-box">
             <div className="box-content">

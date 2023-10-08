@@ -40,6 +40,7 @@ const Dashboard = () => {
             <h2>Me contacter</h2>
           </div>
         </div>
+
         <div className=" formulaire">
           <Formulaire />
         </div>
@@ -89,7 +90,7 @@ const Dashboard = () => {
                 <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                   Twitter
                 </a>
-              </p>
+              </p>{' '}
             </div>
           </div>
         </div>

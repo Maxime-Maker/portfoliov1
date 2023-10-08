@@ -10,6 +10,19 @@ const Navbar = () => {
             className="logo"
           />
         </div>
+        <div>
+          <ul>
+            <li>
+              <a href="#technologie">Technologie</a>
+            </li>
+            <li>
+              <a href="#projets">Projets</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
         <div className="CV">
           <CVDownloadButton />
         </div>

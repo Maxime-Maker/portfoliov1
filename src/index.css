@@ -30,6 +30,7 @@ a {
   cursor: url(https://www.onyedika.xyz/static/media/arrowPoint.5b3f3b5c07736388f143.svg)
       15 15,
     move;
+  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar-corner {
   background-color: #fff; /* Couleur des coins */
@@ -51,10 +52,11 @@ body {
   display: flex;
   height: 9vh;
   justify-content: space-between;
-  max-width: 100%;
+  width: 100%;
   padding: 0;
-
-  position: sticky;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
   top: 0;
   z-index: 100;
   padding: 1rem;
@@ -73,7 +75,7 @@ body {
   }
 
   50% {
-    transform: scale(1.1);
+    transform: scale(0.8);
   }
 
   100% {
@@ -146,7 +148,9 @@ body {
   height: auto;
 }
 .content {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .home .home-intro .content .content-hi {
   margin-bottom: 1.5rem;
@@ -179,6 +183,11 @@ p {
 }
 .content-primary {
   margin-bottom: 2rem;
+  text-align: center;
+}
+.content-secondary {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 .home .home-intro .content .content-primary h1 span {
   color: #14e956;
@@ -355,6 +364,7 @@ p {
 
 .project-button:hover {
   background-color: #097a2c; /* Changement de couleur du bouton au passage de la souris */
+  color: wheat;
 }
 .scrollToTop {
   display: flex;
@@ -386,7 +396,7 @@ p {
 .show {
   opacity: 1;
   transform: translateX(0); /* Position centrée sur l'écran */
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Animation de 0.5 seconde */
+  transition: opacity 1.5s ease, transform 1.5s ease; /* Animation de 0.5 seconde */
 }
 label {
   display: block;
@@ -408,7 +418,9 @@ button[type='submit'] {
   border: none;
   border-radius: 4px;
   padding: 10px 20px;
-  cursor: pointer;
+  cursor: url(https://www.onyedika.xyz/static/media/arrowPoint.5b3f3b5c07736388f143.svg)
+      15 15,
+    move;
 }
 
 button[type='submit']:hover {
@@ -419,14 +431,44 @@ button[type='submit']:hover {
   justify-content: center;
 }
 .img-project {
+  height: 160px;
   max-width: 20rem;
   margin: 1rem;
 }
 .btn-cv {
-  border-radius: 5rem;
-  border: 2px solid rgba(12, 140, 52, 0.8);
-  background: #1c7239;
-  color: wheat;
+  margin-top: 0.2rem;
+  width: 80px;
+  height: 80px;
+  background: url(../public/static/cv.png);
+  border: none;
+  background-size: cover; /* Ajustez la taille de l'image à la taille de l'élément */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  background-position: center;
+  overflow: hidden; /* Masque tout ce qui dépasse de la zone de l'image */
+  transition: transform 0.2s;
+  cursor: url(https://www.onyedika.xyz/static/media/arrowPoint.5b3f3b5c07736388f143.svg)
+      15 15,
+    move;
+}
+.btn-cv:hover {
+  animation: shake 0.5s infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-5px, -5px);
+  }
+  50% {
+    transform: translate(5px, 5px);
+  }
+  75% {
+    transform: translate(-5px, -5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 .contact-info img {
   height: 10rem;
@@ -438,9 +480,34 @@ button[type='submit']:hover {
 a {
   text-decoration: none;
   color: wheat;
-  font-size: 1.5rem;
 }
 .form-container p {
   color: wheat;
   font-size: 1.5rem;
+}
+
+ul {
+  list-style: none; /* Supprimer les puces de liste */
+  display: flex; /* Affichage en ligne des éléments de la liste */
+}
+
+li {
+  margin-right: 20px; /* Espacement entre les éléments de liste */
+}
+
+a {
+  text-decoration: none; /* Supprimer la soulignement des liens */
+  color: #fff; /* Couleur du texte des liens */
+  font-weight: bold; /* Gras */
+  transition: transform 0.3s; /* Animation de transformation pour la vibration */
+}
+
+/* Animation de vibration au survol */
+a:hover {
+  color: #097a2c; /* Déplacer légèrement le lien vers la gauche */
+}
+
+/* Animation de vibration au clic */
+a:active {
+  transform: translateY(2px); /* Déplacer légèrement le lien vers le bas */
 }

@@ -17,9 +17,7 @@ class CVDownloadButton extends React.Component {
 
   render() {
     return (
-      <button className="btn-cv" onClick={this.handleDownloadClick}>
-        Télécharger mon CV
-      </button>
+      <button className="btn-cv" onClick={this.handleDownloadClick}></button>
     );
   }
 }

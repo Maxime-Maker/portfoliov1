@@ -33,7 +33,7 @@ export const Formulaire = () => {
   };
 
   return (
-    <div className="form-container">
+    <div className="form-container" id="contact">
       <h2>Envoyer moi un Mail</h2>
       <form ref={form} onSubmit={sendEmail}>
         <div className="form-group">
