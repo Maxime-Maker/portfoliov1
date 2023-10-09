@@ -23,7 +23,7 @@ const Dashboard = () => {
               <div className="content-secondary">
                 <p>
                   Je recherche un apprentissage de deux ans pour mon diplôme de{' '}
-                  <span>Concepteur Développeur d’Applications</span> suivi à{' '}
+                  <span>Concepteur d’Applications</span> suivi à{' '}
                   <span>Foreach Academy</span>
                 </p>
               </div>
