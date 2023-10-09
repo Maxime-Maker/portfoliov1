@@ -5,7 +5,9 @@ import CardProject from '../components/CardProject';
 const Dashboard = () => {
   return (
     <>
+      {' '}
       <div className="home">
+        {' '}
         <div className="home-content">
           <div className="home-intro">
             <div className="content">
@@ -40,7 +42,6 @@ const Dashboard = () => {
             <h2>Me contacter</h2>
           </div>
         </div>
-
         <div className=" formulaire">
           <Formulaire />
         </div>

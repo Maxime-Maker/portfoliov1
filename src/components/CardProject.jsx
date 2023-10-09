@@ -15,8 +15,9 @@ const CardProject = () => {
           <p className="project-description">To do list</p>
           <a
             className="project-button"
-            href="lien-de-redirection"
+            href="https://grocerybudv1.netlify.app"
             target="_blank"
+            rel="noreferrer"
           >
             En savoir plus
           </a>
@@ -33,6 +34,7 @@ const CardProject = () => {
             className="project-button"
             href="https://back-roadbio.netlify.app/"
             target="_blank"
+            rel="noreferrer"
           >
             En savoir plus
           </a>
@@ -49,6 +51,7 @@ const CardProject = () => {
             className="project-button"
             href="https://retro-catcher.netlify.app/"
             target="_blank"
+            rel="noreferrer"
           >
             En savoir plus
           </a>
