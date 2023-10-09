@@ -23,6 +23,27 @@
   border-radius: 20px;
   border: 2px solid #fdfdfd;
 }
+* {
+  background-size: cover; /* Pour ajuster la taille de l'image au conteneur */
+  animation: animateBackground 20s linear infinite;
+}
+@keyframes animateBackground {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: -10% 0%;
+  }
+  50% {
+    background-position: -20% 20%;
+  }
+  75% {
+    background-position: -10% 10%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
 
 body,
 html,
@@ -84,7 +105,7 @@ body {
 }
 
 .home {
-  background: url(/static/fond.png) no-repeat center/cover fixed;
+  background: black;
 }
 .hi {
   animation: wobbl 2.5s infinite;
@@ -130,16 +151,11 @@ body {
 
 .home .home-intro {
   align-items: center;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(5, 8, 16, 0.6),
-      rgba(5, 8, 16, 0.6)
-    ),
-    url(/static/media/index.89d3119….svg);
+
   background-position: top;
   background-size: cover;
   display: flex;
-  height: 74vh;
+  height: 100vh;
   justify-content: space-between;
   padding: 8rem 5rem 0;
 }
@@ -511,4 +527,10 @@ a:hover {
 /* Animation de vibration au clic */
 a:active {
   transform: translateY(2px); /* Déplacer légèrement le lien vers le bas */
+}
+
+.formulaire,
+.tooling,
+.home-content {
+  background: url(../public/static/téléchargement.png);
 }

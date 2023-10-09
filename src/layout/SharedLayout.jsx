@@ -4,8 +4,10 @@ import Navbar from '../components/Navbar.jsx';
 const DashboardLayout = () => {
   return (
     <>
-      <Navbar />
-      <Outlet />
+      <div className="theme">
+        <Navbar />
+        <Outlet />
+      </div>
     </>
   );
 };
