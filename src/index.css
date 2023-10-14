@@ -442,12 +442,12 @@ button[type='submit']:hover {
   margin-top: 0.2rem;
   width: 80px;
   height: 80px;
-  background: url(../public/static/cv.png);
+  background: url(../public/static/Capture_d_écran_2023-10-09_221531-removebg-preview.png);
   border: none;
-  background-size: cover; /* Ajustez la taille de l'image à la taille de l'élément */
+  background-size: contain; /* Ajustez la taille de l'image à la taille de l'élément */
   background-repeat: no-repeat; /* Empêche la répétition de l'image */
   background-position: center;
-  overflow: hidden; /* Masque tout ce qui dépasse de la zone de l'image */
+
   transition: transform 0.2s;
   cursor: url(https://www.onyedika.xyz/static/media/arrowPoint.5b3f3b5c07736388f143.svg)
       15 15,

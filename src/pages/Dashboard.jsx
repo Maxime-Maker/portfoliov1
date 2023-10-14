@@ -58,7 +58,7 @@ const Dashboard = () => {
               <img src="./static/linkedin-logo-png-1854.png" alt="" />
               <p>
                 <a
-                  href="https://www.linkedin.com/in/maxime-marie-b678b6133/"
+                  href="https://www.linkedin.com/in/MaximeWebCraft"
                   target="_blank"
                   rel="noreferrer"
                 >
